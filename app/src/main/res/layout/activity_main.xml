@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="175dp"
+        android:layout_height="185dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/brain_mov" />
+
+    <Button
+        android:id="@+id/textReco"
+        android:layout_width="170dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="15dp"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical"
+        android:onClick="TextReco"
+        android:text="TEXT RECOGNITION"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/imageReco"
+        android:layout_width="170dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/textReco"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="15dp"
+        android:gravity="center_vertical"
+        android:onClick="ImagetReco"
+        android:text="IMAGE RECOGNITION"
+        android:textAlignment="center" />
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-9739907103296154/9927019156">
+    </com.google.android.gms.ads.AdView>
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="65dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-9739907103296154/9927019156">
+
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>
